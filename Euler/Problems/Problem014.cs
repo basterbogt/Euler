@@ -24,14 +24,14 @@ namespace Euler.Problems
             int longestChain = 0;
             for(int i = 1; i < startingLimit; i++)
             {
-                int n = i;
+                long n = i;
                 int chainLength = 1;
                 while(n > 1)
                 {
                     n = (IsEven(n)) ? n / 2 : 3 * n + 1;
                     chainLength++;
                 }
-                if(chainLength >= longestChain)
+                if(chainLength > longestChain)
                 {
                     longestChain = chainLength;
                     PrintTemp(String.Format("{0:000000} - {1}", i, longestChain));
@@ -39,7 +39,7 @@ namespace Euler.Problems
             }
         }
 
-        private bool IsEven(int n)
+        private bool IsEven(long n)
         {
             return (n % 2 == 0);
         }

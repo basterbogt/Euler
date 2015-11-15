@@ -45,7 +45,7 @@ namespace Euler.Problems
                 if (q.Count < numberAdjacentDigits) continue;
                 if (q.Count > numberAdjacentDigits) q.Dequeue();
 
-                int currentResult = 1; //Starting at 1, because anything times 1 is anything
+                long currentResult = 1; //Starting at 1, because anything times 1 is anything
                 foreach(int n in q)
                 {
                     currentResult *= n;
