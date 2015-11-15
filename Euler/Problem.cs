@@ -7,7 +7,7 @@ namespace Euler
         private bool _newLine = true;
         private DateTime timestamp;
         public abstract void Calculate();
-
+        
         public void Print(object print, bool newLine = true)
         {
             if (newLine) {

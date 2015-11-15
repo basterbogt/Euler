@@ -4,7 +4,7 @@
     /// The prime factors of 13195 are 5, 7, 13 and 29.
     /// What is the largest prime factor of the number 600851475143 ?
     /// </summary>
-    public class Problem3 : Problem
+    public class Problem003 : Problem
     {
         private int PrimeCounter = 0;   //Counter, used to count the amount of primes we calculated
         private int CurrentPrime = 1;   //variable, used to store the current prime
@@ -13,7 +13,6 @@
 
         public override void Calculate()
         {
-            Start();
             long number = 600851475143; //Input number
             int primeIndex = 0; //local counter
             while(number > 1) //while we haven't reached 1 yet
@@ -32,7 +31,6 @@
                     primeIndex++; //if not, lets check the next prime...
                 }
             }
-            Stop();
         }
 
         /// <summary>
