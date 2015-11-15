@@ -46,5 +46,12 @@ namespace Euler
                 Print(String.Format("Finished calculating after {0} seconds.", miliseconds / 1000));
             }
         }
+
+        public string[] ReadTextFile(string file = null, string location = null)
+        {
+            if (file == null) file = this.GetType().Name;
+            if (location == null) location = String.Format(@"Files\{0}.txt", file);
+            return System.IO.File.Exists(location) ? System.IO.File.ReadAllLines(location): new string[0];
+        }
     }
 }

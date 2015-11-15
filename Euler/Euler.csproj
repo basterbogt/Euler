@@ -55,11 +55,18 @@
     <Compile Include="Problems\Problem008.cs" />
     <Compile Include="Problems\Problem010.cs" />
     <Compile Include="Problems\Problem011.cs" />
+    <Compile Include="Problems\Problem012.cs" />
+    <Compile Include="Problems\Problem013.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Files\Problem013.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
