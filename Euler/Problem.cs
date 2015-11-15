@@ -37,13 +37,18 @@ namespace Euler
         public void Stop()
         {
             int miliseconds = Convert.ToInt32(DateTime.Now.TimeOfDay.TotalMilliseconds - timestamp.TimeOfDay.TotalMilliseconds);
-            if(miliseconds < 10000)
+            int seconds = miliseconds / 1000;
+            if (miliseconds < 10000)
             { 
                 Print(String.Format("Finished calculating after {0} miliseconds.", miliseconds));
             }
+            else if (miliseconds < 600000)
+            {
+                Print(String.Format("Finished calculating after {0} seconds.", seconds));
+            }
             else
             {
-                Print(String.Format("Finished calculating after {0} seconds.", miliseconds / 1000));
+                Print(String.Format("Finished calculating after {0} minutes, {1} seconds.", seconds / 60, seconds % 60));
             }
         }
 
