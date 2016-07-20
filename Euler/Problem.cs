@@ -25,7 +25,19 @@ namespace Euler
         }
         public void PrintTemp(object print)
         {
-            Print(String.Format("\r{0}", print), false);
+            Print(string.Format("\r{0}", print), false);
+        }
+        public void PrintOverwriteTemp(object print)
+        {
+            PrintTemp(print);
+            Console.WriteLine();
+        }
+        /// <summary>
+        /// Used in combination with PrintTemp, to make the most recent temporary print a definite  print afterwards....!
+        /// </summary>
+        public void PrintMakeMostRecentTempDefinite() 
+        {
+            Console.WriteLine();
         }
 
         public void Start()
