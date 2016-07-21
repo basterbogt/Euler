@@ -71,6 +71,7 @@
     <Compile Include="Problems\Problem026.cs" />
     <Compile Include="Problems\Problem027.cs" />
     <Compile Include="Problems\Problem028.cs" />
+    <Compile Include="Problems\Problem029.cs" />
     <Compile Include="Problems\Problem067.cs" />
     <Compile Include="Problems\Problem020.cs" />
     <Compile Include="Problems\Problem024.cs" />
@@ -95,6 +96,9 @@
     <Content Include="Files\Problem067.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Utilities\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
