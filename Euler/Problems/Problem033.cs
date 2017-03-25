@@ -37,7 +37,7 @@ namespace Euler.Problems
                     int b1 = ToInt(bChars[0]);
                     int b2 = ToInt(bChars[1]);
 
-                    if(a2 == 0 && b2 == 0) //Ignore trivial examples where both denominators end with 0
+                    if (a2 == 0 && b2 == 0) //Ignore trivial examples where both denominators end with 0
                     {
                         continue;
                     }
@@ -74,7 +74,7 @@ namespace Euler.Problems
             if (x.ToDouble(decimalPlaces) == y.ToDouble(decimalPlaces))
             {
                 Print(string.Format("Fraction found: {0} / {1}    {2} / {3}", x.Numerator, x.Denominator, y.Numerator, y.Denominator));
-                nonTrivialExamples.Add( Fraction.Parse(y.ToDouble(decimalPlaces)));
+                nonTrivialExamples.Add(Fraction.Parse(y.ToDouble(decimalPlaces)));
             }
         }
 
@@ -121,8 +121,8 @@ namespace Euler.Problems
                 return double.NaN;
 
             return System.Math.Round(
-                Numerator / (double)Denominator,
-                decimalPlaces
+            Numerator / (double)Denominator,
+            decimalPlaces
             );
         }
 

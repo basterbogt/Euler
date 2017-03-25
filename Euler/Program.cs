@@ -10,7 +10,7 @@ namespace Euler
     {
         static void Main(string[] args)
         {
-            Problem p = new Problem026();
+            Problem p = new Problem034();
             p.Start();
             p.Calculate();
             p.Stop();
